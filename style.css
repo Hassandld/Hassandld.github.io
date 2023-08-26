@@ -315,10 +315,13 @@ section {
         align-items: center;
     }
 
+    .main  {
+        background-image: url("images/New\ Project4.png");
+    }
+
 @media (max-width: 641px) {
     body{
-        font-size: 12px;
-
+        font-size: 10px;
     }
 
     .main-content h2 {
@@ -327,6 +330,15 @@ section {
 
     .main-content h3 {
         font-size: 1.4em;
+    }
+
+    .footer {
+        letter-spacing: -1px;
+        font-size: 8px;
+    }
+
+    .footer-title {
+        padding-top: 6px;
     }
 }
 
