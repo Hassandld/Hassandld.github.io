@@ -57,7 +57,7 @@ section {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: url(images/New\ Project.png) no-repeat;
+    background: url(images/NewProject5.png) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -316,7 +316,7 @@ section {
     }
 
     .main  {
-        background-image: url("images/New\ Project4.png");
+        background-image: url("images/NewProject5.png");
     }
 
 @media (max-width: 641px) {
