@@ -38,13 +38,13 @@ const Contact = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-12">
-          <a href="mailto:HassanBahathiq@hotmail.com" className="flex items-center gap-3 text-gray-300 hover:text-emerald-400 transition-colors group">
+          <a href="mailto:hassan2030b@gmail.com" className="flex items-center gap-3 text-gray-300 hover:text-emerald-400 transition-colors group">
             <div className="w-12 h-12 bg-gray-800 rounded-full flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
               <Mail size={24} />
             </div>
             <div className="text-left">
               <div className="text-sm text-gray-500">{t.email}</div>
-              <div className="font-medium" dir="ltr">HassanBahathiq@hotmail.com</div>
+              <div className="font-medium" dir="ltr">hassan2030b@gmail.com</div>
             </div>
           </a>
 

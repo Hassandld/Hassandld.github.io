@@ -19,7 +19,9 @@ const FeaturedProject = () => {
         "Single Sign-On (SSO) integration across multiple services",
         "Multi-Factor Authentication (MFA) enforcement",
         "Role-Based Access Control (RBAC) & Governance",
-        "Automated User Provisioning & Deprovisioning"
+        "Automated User Provisioning & Deprovisioning",
+        "Comprehensive Usability & Functional Testing",
+        "Advanced Penetration Testing & Vulnerability Assessment"
       ],
       techStack: ["Next.js", "Keycloak", "OAuth 2.0 / OIDC", "Docker", "PostgreSQL", "Tailwind CSS"]
     },
@@ -34,7 +36,9 @@ const FeaturedProject = () => {
         "تكامل الدخول الموحد (SSO) عبر خدمات متعددة",
         "فرض المصادقة متعددة العوامل (MFA)",
         "التحكم في الوصول القائم على الأدوار (RBAC) والحوكمة",
-        "أتمتة توفير وإلغاء حسابات المستخدمين"
+        "أتمتة توفير وإلغاء حسابات المستخدمين",
+        "اختبارات قابلية الاستخدام والاختبارات الوظيفية الشاملة",
+        "اختبارات الاختراق وتقييم الثغرات الأمنية المتقدمة"
       ],
       techStack: ["Next.js", "Keycloak", "OAuth 2.0 / OIDC", "Docker", "PostgreSQL", "Tailwind CSS"]
     }

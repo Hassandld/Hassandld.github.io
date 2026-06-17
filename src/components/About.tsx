@@ -17,8 +17,8 @@ const About = () => {
     },
     ar: {
       title: "نبذة عني",
-      p1: "أنا رائد أعمال وخريج أمن سيبراني شغوف بتحقيق النتائج، وأمتلك أساساً قوياً في الذكاء الاصطناعي، والحوكمة والمخاطر والالتزام (GRC)، وإدارة الهوية والوصول (IAM)، والعمليات الأمنية. يكمن شغفي في مواءمة القدرات الأمنية التقنية مع احتياجات الأعمال والحوكمة الشاملة.",
-      p2: "من خلال أدوار تتراوح من متدرب كمهندس أمن سيبراني في منصة سلة للتجارة الإلكترونية إلى صائد تهديدات سيبرانية في أمانة العاصمة المقدسة، اكتسبت خبرة عملية في إجراء تقييمات المخاطر المتوافقة مع الهيئة الوطنية للأمن السيبراني، وتطوير السياسات الأمنية، ونشر حلول SIEM. أظهر مشروع تخرجي، منصة موحد لإدارة الهوية، قدرتي على تصميم حلول مركزية لحوكمة الهوية وإدارة دورة الحياة.",
+      p1: "رائد أعمال وخريج أمن سيبراني شغوف بتحقيق النتائج، وأمتلك أساساً قوياً في الذكاء الاصطناعي، والحوكمة والمخاطر والالتزام (GRC)، وإدارة الهوية والوصول (IAM)، والعمليات الأمنية. يكمن شغفي في مواءمة القدرات الأمنية التقنية مع احتياجات الأعمال والحوكمة الشاملة.",
+      p2: "من خلال أدوار تتراوح من متدرب كمهندس أمن سيبراني في شركة سلة للتجارة الالكترونية إلى صائد تهديدات سيبرانية في أمانة العاصمة المقدسة، اكتسبت خبرة عملية في إجراء تقييمات المخاطر المتوافقة مع الهيئة الوطنية للأمن السيبراني، وتطوير السياسات الأمنية، ونشر حلول SIEM. أظهر مشروع تخرجي، منصة موحد لإدارة الهوية، قدرتي على تصميم حلول مركزية لحوكمة الهوية وإدارة دورة الحياة.",
       p3: "إلى جانب المهارات التقنية في الأمن السيبراني، أمتلك خبرة واسعة في القيادة ومكتب إدارة المشاريع (PMO) الاستراتيجي. بصفتي رئيساً لنادي الحاسب الآلي بجامعة أم القرى وأخصائي تخطيط وPMO، قمت بتنظيم أحداث تقنية واسعة النطاق، وتطوير مؤشرات الأداء التشغيلية، وإدارة فرق متعددة التخصصات لدفع مبادرات التحول الرقمي المتوافقة مع رؤية السعودية 2030.",
       p4: "حاصل على شارة التميز من جاهزية (2026) وتأهلت لنهائيات مسابقة التقط العلم في فعالية بلاك هات الشرق الأوسط، أجمع الدقة التحليلية مع الرؤية الاستراتيجية لتقديم حلول تقنية قوية وآمنة ومرنة."
     }
@@ -27,19 +27,14 @@ const About = () => {
   const t = content[lang];
 
   return (
-    <section id="about" className="py-20 px-6 sm:px-12 lg:px-24 bg-gray-900/50">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row gap-12 items-start">
-          <div className="md:w-1/3 flex flex-col gap-6">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">{t.title}</h2>
-              <div className="w-16 h-1 bg-emerald-500 rounded"></div>
-            </div>
-            <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-gray-700 shadow-xl">
-              <Image src="/about-image.png" alt={t.title} fill className="object-cover" />
-            </div>
+    <section id="about" className="py-20 px-6 sm:px-12 lg:px-24 bg-transparent relative z-10">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex flex-col gap-12 items-center text-center">
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">{t.title}</h2>
+            <div className="w-16 h-1 bg-emerald-500 rounded mx-auto"></div>
           </div>
-          <div className="md:w-2/3 space-y-6 text-gray-300 text-lg leading-relaxed">
+          <div className="space-y-6 text-gray-300 text-lg sm:text-xl leading-relaxed bg-gray-900/60 p-8 sm:p-12 rounded-3xl border border-gray-700 backdrop-blur-sm shadow-2xl">
             <p>{t.p1}</p>
             <p>{t.p2}</p>
             <p>{t.p3}</p>

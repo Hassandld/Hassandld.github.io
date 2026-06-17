@@ -12,6 +12,13 @@ const Awards = () => {
       title: "Awards & Honors",
       items: [
         {
+          icon: <Star className="text-emerald-400" size={24} />,
+          title: "Dean's Honor List",
+          org: "Umm Al-Qura University",
+          year: "2024 & 2025",
+          desc: "Awarded to students demonstrating exceptional academic excellence and high GPA achievement."
+        },
+        {
           icon: <ShieldCheck className="text-emerald-400" size={24} />,
           title: "Jahiziyah Excellence Badge",
           org: "Education & Training Evaluation Commission",
@@ -37,6 +44,13 @@ const Awards = () => {
     ar: {
       title: "الجوائز والتكريمات",
       items: [
+        {
+          icon: <Star className="text-emerald-400" size={24} />,
+          title: "لائحة شرف العميد",
+          org: "جامعة أم القرى",
+          year: "2024 و 2025",
+          desc: "تُمنح للطلاب الذين يظهرون تميزاً أكاديمياً استثنائياً وتحقيق معدل تراكمي عالٍ."
+        },
         {
           icon: <ShieldCheck className="text-emerald-400" size={24} />,
           title: "شارة جاهزية للتميز",

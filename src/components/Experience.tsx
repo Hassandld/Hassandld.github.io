@@ -67,6 +67,27 @@ const Experience = () => {
           ]
         },
         {
+          role: "Head of Technology Community",
+          company: "KEPTAR - Awontech",
+          date: "Jan 2024 - Dec 2026",
+          location: "Makkah, Saudi Arabia",
+          description: [
+            "Led community-driven technology initiatives aligned with Saudi Vision 2030, driving digital awareness.",
+            "Organized technical programs and content campaigns highlighting Saudi technology, innovation, and entrepreneurship."
+          ]
+        },
+        {
+          role: "President",
+          company: "UQU Computing Club",
+          date: "Aug 2024 - Sep 2025",
+          location: "College of Computing, Makkah",
+          description: [
+            "Led governance and strategic initiatives for the university's largest student organization.",
+            "Organized flagship technology events including TechProTalk and Entrepreneurship Week.",
+            "Managed multidisciplinary teams and initiatives reaching 500+ students, fostering technical growth."
+          ]
+        },
+        {
           role: "Co-Lead Project Management Team",
           company: "UQU Computing Club",
           date: "Mar 2024 - Jun 2024",
@@ -83,27 +104,6 @@ const Experience = () => {
           description: [
             "Managed all social media aspects and the public appearance of the club as the Leader of the Media Committee."
           ]
-        },
-        {
-          role: "President",
-          company: "UQU Computing Club",
-          date: "Jan 2024 - Dec 2025",
-          location: "College of Computing, Makkah",
-          description: [
-            "Led governance and strategic initiatives for the university's largest student organization.",
-            "Organized flagship technology events including TechProTalk and Entrepreneurship Week.",
-            "Managed multidisciplinary teams and initiatives reaching 500+ students, fostering technical growth."
-          ]
-        },
-        {
-          role: "Head of Technology Community",
-          company: "KEPTAR - Awontech",
-          date: "Jan 2024 - Dec 2026",
-          location: "Makkah, Saudi Arabia",
-          description: [
-            "Led community-driven technology initiatives aligned with Saudi Vision 2030, driving digital awareness.",
-            "Organized technical programs and content campaigns highlighting Saudi technology, innovation, and entrepreneurship."
-          ]
         }
       ]
     },
@@ -112,7 +112,7 @@ const Experience = () => {
       items: [
         {
           role: "أخصائي تخطيط ومكتب إدارة المشاريع",
-          company: "رحلة ومنافع - إشراقات",
+          company: "رحلة ومنافع - أشرقت",
           date: "أبريل 2025 - يوليو 2025 ومارس 2026 - يونيو 2026",
           location: "مكة المكرمة، السعودية",
           description: [
@@ -135,7 +135,7 @@ const Experience = () => {
         },
         {
           role: "متدرب - مهندس أمن سيبراني",
-          company: "منصة سلة للتجارة الإلكترونية",
+          company: "شركة سلة للتجارة الالكترونية",
           date: "يونيو 2025 - أغسطس 2025",
           location: "مكة المكرمة - جدة، السعودية",
           description: [
@@ -166,6 +166,27 @@ const Experience = () => {
           ]
         },
         {
+          role: "رئيس المجتمع التقني",
+          company: "مجتمع كبتار - شركة عون التقنية",
+          date: "يناير 2024 - ديسمبر 2026",
+          location: "مكة المكرمة، السعودية",
+          description: [
+            "قيادة المبادرات التقنية المجتمعية المتوافقة مع رؤية السعودية 2030، وتعزيز الوعي الرقمي.",
+            "تنظيم برامج تقنية وحملات محتوى تسلط الضوء على التقنية والابتكار وريادة الأعمال في السعودية."
+          ]
+        },
+        {
+          role: "رئيس النادي",
+          company: "نادي الحاسب الآلي بجامعة أم القرى",
+          date: "أغسطس 2024 - سبتمبر 2025",
+          location: "كلية الحاسب، مكة المكرمة",
+          description: [
+            "قيادة الحوكمة والمبادرات الاستراتيجية لأكبر منظمة طلابية في الجامعة.",
+            "تنظيم الأحداث التقنية الكبرى بما في ذلك أسبوع ريادة الأعمال و TechProTalk.",
+            "إدارة فرق متعددة التخصصات ومبادرات تصل إلى أكثر من 500 طالب، وتعزيز النمو التقني."
+          ]
+        },
+        {
           role: "قائد مشارك لفريق إدارة المشاريع",
           company: "نادي الحاسب الآلي بجامعة أم القرى",
           date: "مارس 2024 - يونيو 2024",
@@ -181,27 +202,6 @@ const Experience = () => {
           location: "مكة المكرمة، السعودية",
           description: [
             "بصفتي قائدًا للجنة الإعلامية، قمت بإدارة جميع جوانب وسائل التواصل الاجتماعي والمظهر العام للنادي."
-          ]
-        },
-        {
-          role: "رئيس النادي",
-          company: "نادي الحاسب الآلي بجامعة أم القرى",
-          date: "يناير 2024 - ديسمبر 2025",
-          location: "كلية الحاسب، مكة المكرمة",
-          description: [
-            "قيادة الحوكمة والمبادرات الاستراتيجية لأكبر منظمة طلابية في الجامعة.",
-            "تنظيم الأحداث التقنية الكبرى بما في ذلك أسبوع ريادة الأعمال و TechProTalk.",
-            "إدارة فرق متعددة التخصصات ومبادرات تصل إلى أكثر من 500 طالب، وتعزيز النمو التقني."
-          ]
-        },
-        {
-          role: "رئيس المجتمع التقني",
-          company: "مجتمع كبتار - شركة عون التقنية",
-          date: "يناير 2024 - ديسمبر 2026",
-          location: "مكة المكرمة، السعودية",
-          description: [
-            "قيادة المبادرات التقنية المجتمعية المتوافقة مع رؤية السعودية 2030، وتعزيز الوعي الرقمي.",
-            "تنظيم برامج تقنية وحملات محتوى تسلط الضوء على التقنية والابتكار وريادة الأعمال في السعودية."
           ]
         }
       ]

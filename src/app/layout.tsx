@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Tajawal } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
+import Background from "@/components/Background";
 
 const inter = Inter({ subsets: ["latin"] });
 const tajawal = Tajawal({ 
@@ -45,8 +46,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} ${tajawal.variable} bg-gray-900 text-gray-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200`}>
+      <body className={`${inter.className} ${tajawal.variable} text-gray-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200`}>
         <LanguageProvider>
+          <Background />
           {children}
         </LanguageProvider>
       </body>
