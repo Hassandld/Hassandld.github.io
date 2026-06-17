@@ -36,7 +36,7 @@ const About = () => {
               <div className="w-16 h-1 bg-emerald-500 rounded"></div>
             </div>
             <div className="relative w-full aspect-[4/3] rounded-xl overflow-hidden border border-gray-700 shadow-xl">
-              <Image src="/about-image.jpg" alt={t.title} fill className="object-cover" />
+              <Image src="/about-image.png" alt={t.title} fill className="object-cover" />
             </div>
           </div>
           <div className="md:w-2/3 space-y-6 text-gray-300 text-lg leading-relaxed">

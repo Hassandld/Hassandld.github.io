@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Tajawal } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 
 const inter = Inter({ subsets: ["latin"] });
+const tajawal = Tajawal({ 
+  subsets: ["arabic"], 
+  weight: ["200", "300", "400", "500", "700", "800", "900"],
+  variable: '--font-tajawal'
+});
 
 export const metadata: Metadata = {
   title: "Hassan Bahathiq | Cybersecurity & PMO Professional",
@@ -40,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} bg-gray-900 text-gray-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200`}>
+      <body className={`${inter.className} ${tajawal.variable} bg-gray-900 text-gray-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200`}>
         <LanguageProvider>
           {children}
         </LanguageProvider>

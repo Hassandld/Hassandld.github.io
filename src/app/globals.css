@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+:lang(ar) {
+  font-family: var(--font-tajawal), sans-serif;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
