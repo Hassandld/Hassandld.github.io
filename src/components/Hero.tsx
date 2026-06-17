@@ -11,15 +11,15 @@ const Hero = () => {
 
   const content = {
     en: {
-      subtitle: "Professional Portfolio",
-      title: "Hassan Ahmed Bahathiq",
+      subtitle: "Welcome to my space",
+      title: "Hassan Bahathiq",
       headline: "Cybersecurity Graduate | GRC | IAM | Security Operations",
       description: "Experienced in Governance, Risk & Compliance (GRC), Identity & Access Management (IAM), Security Operations, Strategic Planning, and PMO initiatives.",
       contact: "Contact Me"
     },
     ar: {
-      subtitle: "ملف الإنجاز المهني",
-      title: "حسن أحمد باحاذق",
+      subtitle: "مرحباً بك في مساحتي",
+      title: "حسن باحاذق",
       headline: "خريج أمن سيبراني | الحوكمة والمخاطر والالتزام | إدارة الهوية | العمليات الأمنية",
       description: "خبرة في الحوكمة والمخاطر والامتثال (GRC)، وإدارة الهوية والوصول (IAM)، والعمليات الأمنية، والتخطيط الاستراتيجي، ومبادرات مكتب إدارة المشاريع (PMO).",
       contact: "تواصل معي"
