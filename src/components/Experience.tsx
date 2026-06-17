@@ -88,12 +88,12 @@ const Experience = () => {
           ]
         },
         {
-          role: "Co-Lead Project Management Team",
+          role: "Vice President of Project Management Committee",
           company: "UQU Computing Club",
           date: "Mar 2024 - Jun 2024",
           location: "College of Computing, Makkah",
           description: [
-            "Overseen the working plan, making necessary changes, and ensuring all tasks were completed effectively as a project manager."
+            "Overseen the working plan, making necessary changes, and ensuring all tasks were completed effectively as Vice President."
           ]
         },
         {
@@ -111,7 +111,7 @@ const Experience = () => {
       title: "الخبرات العملية",
       items: [
         {
-          role: "أخصائي تخطيط ومكتب إدارة المشاريع",
+          role: "أخصائي تخطيط وإدارة مشاريع",
           company: "رحلة ومنافع - أشرقت",
           date: "أبريل 2025 - يوليو 2025 ومارس 2026 - يونيو 2026",
           location: "مكة المكرمة، السعودية",
@@ -166,8 +166,8 @@ const Experience = () => {
           ]
         },
         {
-          role: "رئيس المجتمع التقني",
-          company: "مجتمع كبتار - شركة عون التقنية",
+          role: "رئيس مجتمع كِبتار التقني",
+          company: "مجتمع كبتار - جمعية عون التقنية",
           date: "يناير 2024 - ديسمبر 2026",
           location: "مكة المكرمة، السعودية",
           description: [
@@ -177,7 +177,7 @@ const Experience = () => {
         },
         {
           role: "رئيس النادي",
-          company: "نادي الحاسب الآلي بجامعة أم القرى",
+          company: "نادي الحاسبات بجامعة أم القرى",
           date: "أغسطس 2024 - سبتمبر 2025",
           location: "كلية الحاسب، مكة المكرمة",
           description: [
@@ -187,12 +187,12 @@ const Experience = () => {
           ]
         },
         {
-          role: "قائد مشارك لفريق إدارة المشاريع",
-          company: "نادي الحاسب الآلي بجامعة أم القرى",
+          role: "نائب رئيس لجنة إدارة المشاريع",
+          company: "نادي الحاسبات بجامعة أم القرى",
           date: "مارس 2024 - يونيو 2024",
           location: "كلية الحاسب، مكة المكرمة",
           description: [
-            "بصفتي مدير مشروع، أشرفت على خطة العمل وإجراء التغييرات اللازمة والتأكد من إنجاز جميع المهام على الوجه المطلوب."
+            "بصفتي نائب رئيس لجنة إدارة المشاريع، أشرفت على خطة العمل وإجراء التغييرات اللازمة والتأكد من إنجاز جميع المهام على الوجه المطلوب."
           ]
         },
         {

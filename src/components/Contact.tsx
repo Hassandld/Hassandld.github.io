@@ -14,14 +14,14 @@ const Contact = () => {
       desc: "Whether you have a strategic initiative in mind, need to secure your infrastructure, or just want to connect—I'm always open to discussing new opportunities.",
       email: "Email",
       location: "Location",
-      locationText: "Makkah / Jeddah, Saudi Arabia"
+      locationText: "Makkah / Jeddah / Riyadh, Saudi Arabia"
     },
     ar: {
       title: "تواصل معي",
-      desc: "سواء كان لديك مبادرة استراتيجية، أو تحتاج إلى تأمين البنية التحتية، أو ترغب فقط في التواصل، فأنا دائمًا منفتح لمناقشة فرص جديدة.",
+      desc: "سواء كان لديك مبادرة استراتيجية، أو تحتاج إلى تأمين البنية التحتية، أو فرصة جديدة أو ترغب فقط في التواصل، فأنا دائمًا منفتح لمناقشة فرص جديدة.",
       email: "البريد الإلكتروني",
       location: "الموقع",
-      locationText: "مكة المكرمة / جدة، المملكة العربية السعودية"
+      locationText: "مكة المكرمة / جدة / الرياض، المملكة العربية السعودية"
     }
   };
 

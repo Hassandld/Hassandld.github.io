@@ -11,8 +11,8 @@ const Certifications = () => {
     en: {
       title: "Certifications",
       items: [
-        { name: "eJPT", desc: "Penetration Testing, Vulnerability Assessment & Ethical Hacking", issuer: "eLearnSecurity" },
-        { name: "ISC2 CC", desc: "Security Architecture, GRC, Identity Management", issuer: "ISC2" },
+        { name: "eJPTv2", desc: "Penetration Testing, Vulnerability Assessment & Ethical Hacking", issuer: "eLearnSecurity" },
+        { name: "ISC2 CC (Certified in Cybersecurity)", desc: "Security Architecture, GRC, Identity Management", issuer: "ISC2" },
         { name: "ISC2 Cybersecurity Specialization", desc: "Access Control, Network & Cloud Security, Cryptography & Incident Response", issuer: "ISC2 / Coursera" },
         { name: "NCA-KAUST Cybersecurity Program", desc: "Advanced Cybersecurity Training", issuer: "NCA / KAUST" },
         { name: "Kaspersky Cybersecurity Program", desc: "Cyber Defense, Threat Analysis & Security Practices", issuer: "Kaspersky" },
@@ -24,8 +24,8 @@ const Certifications = () => {
     ar: {
       title: "الشهادات",
       items: [
-        { name: "eJPT", desc: "اختبار الاختراق وتقييم الثغرات والقرصنة الأخلاقية", issuer: "eLearnSecurity" },
-        { name: "ISC2 CC", desc: "الهيكلة الأمنية، GRC، إدارة الهوية", issuer: "ISC2" },
+        { name: "eJPTv2", desc: "اختبار الاختراق وتقييم الثغرات والقرصنة الأخلاقية", issuer: "eLearnSecurity" },
+        { name: "ISC2 CC (Certified in Cybersecurity)", desc: "الهيكلة الأمنية، GRC، إدارة الهوية", issuer: "ISC2" },
         { name: "ISC2 Cybersecurity Specialization", desc: "التحكم في الوصول، أمن الشبكات والسحابة، التشفير والاستجابة للحوادث", issuer: "ISC2 / Coursera" },
         { name: "NCA-KAUST Cybersecurity Program", desc: "تدريب متقدم في الأمن السيبراني", issuer: "NCA / KAUST" },
         { name: "Kaspersky Cybersecurity Program", desc: "الدفاع السيبراني وتحليل التهديدات والممارسات الأمنية", issuer: "Kaspersky" },

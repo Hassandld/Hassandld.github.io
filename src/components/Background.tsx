@@ -14,11 +14,14 @@ export default function Background() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Calculate blur amount based on scroll position (max 10px blur)
-  const blurAmount = Math.min(scrollY / 30, 10);
+  const blurAmount = Math.min(scrollY / 30, 15);
 
   return (
-    <div className="fixed inset-0 -z-50 bg-gray-900">
+    <div className="fixed inset-0 z-[-1]">
+      {/* Base dark layer */}
+      <div className="absolute inset-0 bg-gray-950"></div>
+      
+      {/* Image layer with dynamic blur */}
       <div 
         className="absolute inset-0"
         style={{ filter: `blur(${blurAmount}px)`, transition: 'filter 0.1s ease-out' }}
@@ -27,12 +30,13 @@ export default function Background() {
           src="/about-image.png" 
           alt="Background" 
           fill 
-          className="object-cover opacity-20 md:opacity-30" 
+          className="object-cover opacity-40 md:opacity-50" 
           priority
         />
       </div>
-      {/* Dark overlay to ensure text remains highly readable */}
-      <div className="absolute inset-0 bg-gradient-to-b from-gray-900/80 via-gray-900/90 to-gray-900"></div>
+      
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-gray-900/60"></div>
     </div>
   );
 }

@@ -11,7 +11,7 @@ const FeaturedProject = () => {
     en: {
       title: "Featured Project",
       projectName: "Muwahhad IAM Platform",
-      status: "Graduation Project - UQU",
+      status: "Graduation Project - UQU in collaboration with SALLA E-Commerce",
       desc1: "A comprehensive Identity and Access Management platform built to centralize authentication, authorization, and user lifecycle management for enterprise applications.",
       desc2: "Muwahhad addresses the critical need for secure, scalable identity governance by implementing modern federation protocols and zero-trust principles.",
       keyFeaturesTitle: "Key Features",
@@ -28,7 +28,7 @@ const FeaturedProject = () => {
     ar: {
       title: "مشروع مميز",
       projectName: "منصة موحد لإدارة الهوية",
-      status: "مشروع التخرج - جامعة أم القرى",
+      status: "مشروع التخرج - جامعة أم القرى بالتعاون مع شركة سلة للتجارة الالكترونية",
       desc1: "منصة شاملة لإدارة الهوية والوصول صُممت لمركزة المصادقة والتفويض وإدارة دورة حياة المستخدم لتطبيقات المؤسسات.",
       desc2: "يعالج مشروع 'موحد' الحاجة الماسة لحوكمة الهوية الآمنة والقابلة للتوسع من خلال تنفيذ بروتوكولات الاتحاد الحديثة ومبادئ الثقة المعدومة (Zero-Trust).",
       keyFeaturesTitle: "الميزات الرئيسية",

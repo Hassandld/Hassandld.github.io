@@ -21,16 +21,16 @@ const Awards = () => {
         {
           icon: <ShieldCheck className="text-emerald-400" size={24} />,
           title: "Jahiziyah Excellence Badge",
-          org: "Education & Training Evaluation Commission",
+          org: "Education & Training Evaluation Commission & NCA",
           year: "2026",
           desc: "Recognized among the top cybersecurity graduates across universities in the Kingdom of Saudi Arabia, demonstrating mastery of the National Qualifications Framework."
         },
         {
           icon: <Trophy className="text-emerald-400" size={24} />,
           title: "BlackHat MEA CTF Finalist",
-          org: "BlackHat Middle East & Africa",
+          org: "BlackHat MEA & SAFCSP",
           year: "2024 & 2025",
-          desc: "Competed in the regional finals alongside top cybersecurity talent, solving advanced challenges in cryptography, reverse engineering, and web exploitation."
+          desc: "Qualified for two consecutive years 2024-2025. Competed in the regional finals alongside top cybersecurity talent, solving advanced challenges in cryptography, reverse engineering, and web exploitation."
         },
         {
           icon: <Star className="text-emerald-400" size={24} />,
@@ -54,16 +54,16 @@ const Awards = () => {
         {
           icon: <ShieldCheck className="text-emerald-400" size={24} />,
           title: "شارة جاهزية للتميز",
-          org: "هيئة تقويم التعليم والتدريب",
+          org: "هيئة تقويم التعليم والتدريب والهيئة الوطنية للأمن السيبراني",
           year: "2026",
           desc: "تم التكريم كأحد أفضل خريجي الأمن السيبراني على مستوى الجامعات في المملكة العربية السعودية، مما يثبت إتقان الإطار الوطني للمؤهلات."
         },
         {
           icon: <Trophy className="text-emerald-400" size={24} />,
           title: "متأهل لنهائيات BlackHat MEA CTF",
-          org: "بلاك هات الشرق الأوسط وأفريقيا",
+          org: "بلاك هات الشرق الأوسط وأفريقيا والاتحاد السعودي للأمن السيبراني والبرمجة والدرونز",
           year: "2024 و 2025",
-          desc: "المنافسة في النهائيات الإقليمية إلى جانب أفضل المواهب في الأمن السيبراني، وحل تحديات متقدمة في التشفير والهندسة العكسية واستغلال الويب."
+          desc: "تأهلنا لعامين متتالين 2024-2025. المنافسة في النهائيات الإقليمية إلى جانب أفضل المواهب في الأمن السيبراني، وحل تحديات متقدمة في التشفير والهندسة العكسية واستغلال الويب."
         },
         {
           icon: <Star className="text-emerald-400" size={24} />,
