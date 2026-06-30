@@ -27,18 +27,14 @@ const About = () => {
   const t = content[lang];
 
   return (
-    <section id="about" className="relative py-20 px-6 sm:px-12 lg:px-24 overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image src="/about-image.png" alt="Background" fill className="object-cover opacity-40" />
-        <div className="absolute inset-0 bg-gray-950/60 backdrop-blur-2xl"></div>
-      </div>
-      <div className="max-w-4xl mx-auto relative z-10">
-        <div className="flex flex-col gap-12 items-center text-center">
-          <div>
+    <section id="about" className="py-20 px-6 sm:px-12 lg:px-24 relative z-10">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex flex-col gap-12 items-center">
+          <div className="text-center w-full">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2">{t.title}</h2>
             <div className="w-16 h-1 bg-emerald-500 rounded mx-auto"></div>
           </div>
-          <div className="space-y-6 text-gray-200 text-lg sm:text-xl leading-relaxed bg-gray-900/40 p-8 sm:p-12 rounded-3xl border border-gray-700/50 backdrop-blur-md shadow-2xl">
+          <div className="space-y-6 text-gray-200 text-lg sm:text-xl leading-relaxed bg-gray-900/60 p-8 sm:p-12 rounded-3xl border border-gray-700/50 backdrop-blur-xl shadow-2xl text-justify text-justify-last-center">
             <p>{t.p1}</p>
             <p>{t.p2}</p>
             <p>{t.p3}</p>

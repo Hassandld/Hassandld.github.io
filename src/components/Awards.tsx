@@ -13,11 +13,19 @@ const Awards = () => {
       items: [
         {
           icon: <Star className="text-emerald-400" size={24} />,
-          title: "Dean's Honor List",
+          title: "Dean's Honor List (Extracurricular Activities)",
           org: "Umm Al-Qura University",
-          year: "2024 & 2025",
-          desc: "Awarded to students demonstrating exceptional academic excellence and high GPA achievement.",
+          year: "2024",
+          desc: "Awarded to students demonstrating exceptional academic excellence and high GPA achievement along with significant extracurricular involvement.",
           link: "https://media.licdn.com/dms/image/v2/D4D2DAQG4NWuUA_eRsQ/profile-treasury-image-shrink_1280_1280/profile-treasury-image-shrink_1280_1280/0/1731102457690?e=1783454400&v=beta&t=kteN-RrWDuZiP03qZWwKlUomWNoWzHEsDR8HWl4H_mg"
+        },
+        {
+          icon: <Star className="text-emerald-400" size={24} />,
+          title: "Dean's Honor List (Standardized Tests Excellence)",
+          org: "Umm Al-Qura University",
+          year: "2026",
+          desc: "Awarded for excellence and outstanding achievement in standardized and professional examinations.",
+          link: "https://x.com/uqu_cc/status/2071210328461824170?s=46"
         },
         {
           icon: <ShieldCheck className="text-emerald-400" size={24} />,
@@ -58,11 +66,19 @@ const Awards = () => {
       items: [
         {
           icon: <Star className="text-emerald-400" size={24} />,
-          title: "لائحة شرف العميد (مسار التميز والأنشطة)",
+          title: "لائحة شرف العميد (مسار التميز والأنشطة اللامنهجية)",
           org: "جامعة أم القرى",
-          year: "2024 و 2026",
-          desc: "تُمنح للطلاب الذين يظهرون تميزاً أكاديمياً استثنائياً وتحقيق معدل تراكمي عالٍ.",
+          year: "2024",
+          desc: "تُمنح للطلاب الذين يظهرون تميزاً أكاديمياً استثنائياً مع مشاركة فاعلة في الأنشطة اللامنهجية.",
           link: "https://media.licdn.com/dms/image/v2/D4D2DAQG4NWuUA_eRsQ/profile-treasury-image-shrink_1280_1280/profile-treasury-image-shrink_1280_1280/0/1731102457690?e=1783454400&v=beta&t=kteN-RrWDuZiP03qZWwKlUomWNoWzHEsDR8HWl4H_mg"
+        },
+        {
+          icon: <Star className="text-emerald-400" size={24} />,
+          title: "لائحة شرف العميد (مسار التميز في الاختبارات المعيارية)",
+          org: "جامعة أم القرى",
+          year: "2026",
+          desc: "تُمنح للتميز والإنجاز الاستثنائي في الاختبارات المعيارية والمهنية.",
+          link: "https://x.com/uqu_cc/status/2071210328461824170?s=46"
         },
         {
           icon: <ShieldCheck className="text-emerald-400" size={24} />,

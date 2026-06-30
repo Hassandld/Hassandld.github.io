@@ -9,10 +9,10 @@ export default function RecommendationsPage() {
   const { lang } = useLanguage();
   
   const recommendations = [
-    { name: "Recommendation Dr. Ahmed Al-Hazmi", arName: "توصية د. أحمد الحازمي أستاذ مساعد", file: "توصية د. أحمد الحازمي أستاذ مساعد.pdf" },
-    { name: "Recommendation Dr. Ghassan Bati", arName: "توصية د. غسان باتي استاذ مساعد", file: "توصية د. غسان باتي استاذ مساعد.pdf" },
-    { name: "Recommendation Dr. Ahmed Al-Aql", arName: "توصية من د. أحمد العقل رئيس قسم الأمن السيبراني", file: "توصية من د. أحمد العقل رئيس قسم الأمن السيبراني.pdf" },
-    { name: "Recommendation Dr. Ahad Al-Jarf", arName: "توصية من د. عهد الجرف وكيلة الكلية للتطوير والجودة", file: "توصية من د. عهد الجرف وكيلة الكلية للتطوير والجودة.pdf" }
+    { name: "Recommendation Dr. Ahmed Al-Hazmi", arName: "توصية د. أحمد الحازمي أستاذ مساعد", file: "ahmed-alhazmi.pdf" },
+    { name: "Recommendation Dr. Ghassan Bati", arName: "توصية د. غسان باتي استاذ مساعد", file: "ghassan-bati.pdf" },
+    { name: "Recommendation Dr. Ahmed Al-Aql", arName: "توصية من د. أحمد العقل رئيس قسم الأمن السيبراني", file: "ahmed-alaql.pdf" },
+    { name: "Recommendation Dr. Ahad Al-Jarf", arName: "توصية من د. عهد الجرف وكيلة الكلية للتطوير والجودة", file: "ahad-aljarf.pdf" }
   ];
 
   return (
