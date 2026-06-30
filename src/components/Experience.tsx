@@ -102,7 +102,9 @@ const Experience = () => {
           date: "Aug 2023 - Jun 2024",
           location: "Makkah, Saudi Arabia",
           description: [
-            "Managed all social media aspects and the public appearance of the club as the Leader of the Media Committee."
+            "Managed all social media aspects and the public appearance of the club as the Leader of the Media Committee.",
+            "Led a team of content creators to design and execute digital marketing campaigns, significantly increasing student engagement.",
+            "Oversaw the documentation of events and the creation of promotional materials, ensuring brand consistency."
           ]
         }
       ]
@@ -201,7 +203,9 @@ const Experience = () => {
           date: "أغسطس 2023 - يونيو 2024",
           location: "مكة المكرمة، السعودية",
           description: [
-            "بصفتي قائدًا للجنة الإعلامية، قمت بإدارة جميع جوانب وسائل التواصل الاجتماعي والمظهر العام للنادي."
+            "بصفتي قائدًا للجنة الإعلامية، قمت بإدارة جميع جوانب وسائل التواصل الاجتماعي والمظهر العام للنادي.",
+            "قيادة فريق من صناع المحتوى لتصميم وتنفيذ حملات التسويق الرقمي، مما زاد بشكل كبير من تفاعل الطلاب.",
+            "الإشراف على توثيق الفعاليات وإنشاء المواد الترويجية، مع ضمان اتساق الهوية البصرية."
           ]
         }
       ]

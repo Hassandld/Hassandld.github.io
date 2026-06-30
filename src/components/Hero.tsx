@@ -52,12 +52,16 @@ const Hero = () => {
             </a>
           </div>
 
-          <div className="flex gap-4 pt-4">
-            <a href="https://linkedin.com/in/bahathiq" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors p-2 bg-gray-800/50 rounded-full hover:bg-emerald-500/20 hover:text-emerald-400">
+          <div className="flex flex-wrap gap-4 pt-4 items-center">
+            <a href="https://linkedin.com/in/bahathiq" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors p-3 bg-gray-800/50 rounded-full hover:bg-emerald-500/20 hover:text-emerald-400">
               <FaLinkedin size={24} />
             </a>
-            <a href="https://github.com/Hassandld" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors p-2 bg-gray-800/50 rounded-full hover:bg-emerald-500/20 hover:text-emerald-400">
+            <a href="https://github.com/Hassandld" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors p-3 bg-gray-800/50 rounded-full hover:bg-emerald-500/20 hover:text-emerald-400">
               <FaGithub size={24} />
+            </a>
+            <a href="/recommendations" className="text-gray-400 hover:text-white transition-colors px-4 py-2 bg-gray-800/50 rounded-full hover:bg-emerald-500/20 hover:text-emerald-400 font-medium text-sm border border-gray-700/50 flex items-center gap-2">
+              <span className="hidden sm:inline">{lang === 'ar' ? 'التوصيات' : 'Recommendations'}</span>
+              <span className="sm:hidden">⭐</span>
             </a>
           </div>
         </div>

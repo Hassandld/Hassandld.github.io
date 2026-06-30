@@ -23,7 +23,7 @@ const FeaturedProject = () => {
         "Comprehensive Usability & Functional Testing",
         "Advanced Penetration Testing & Vulnerability Assessment"
       ],
-      techStack: ["Next.js", "Keycloak", "OAuth 2.0 / OIDC", "Docker", "PostgreSQL", "Tailwind CSS"]
+      techStack: ["Django", "Keycloak", "OAuth 2.0 / OIDC", "Docker", "PostgreSQL", "Tailwind CSS"]
     },
     ar: {
       title: "مشروع مميز",
@@ -40,7 +40,7 @@ const FeaturedProject = () => {
         "اختبارات قابلية الاستخدام والاختبارات الوظيفية الشاملة",
         "اختبارات الاختراق وتقييم الثغرات الأمنية المتقدمة"
       ],
-      techStack: ["Next.js", "Keycloak", "OAuth 2.0 / OIDC", "Docker", "PostgreSQL", "Tailwind CSS"]
+      techStack: ["Django", "Keycloak", "OAuth 2.0 / OIDC", "Docker", "PostgreSQL", "Tailwind CSS"]
     }
   };
 

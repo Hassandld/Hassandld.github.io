@@ -11,27 +11,27 @@ const Certifications = () => {
     en: {
       title: "Certifications",
       items: [
-        { name: "eJPTv2", desc: "Penetration Testing, Vulnerability Assessment & Ethical Hacking", issuer: "eLearnSecurity" },
+        { name: "eJPTv2", desc: "Penetration Testing, Vulnerability Assessment & Ethical Hacking", issuer: "eLearnSecurity", link: "https://certs.ine.com/ef49f103-8822-4b59-af07-926ee00a3fb1" },
         { name: "ISC2 CC (Certified in Cybersecurity)", desc: "Security Architecture, GRC, Identity Management", issuer: "ISC2" },
-        { name: "ISC2 Cybersecurity Specialization", desc: "Access Control, Network & Cloud Security, Cryptography & Incident Response", issuer: "ISC2 / Coursera" },
-        { name: "NCA-KAUST Cybersecurity Program", desc: "Advanced Cybersecurity Training", issuer: "NCA / KAUST" },
-        { name: "Kaspersky Cybersecurity Program", desc: "Cyber Defense, Threat Analysis & Security Practices", issuer: "Kaspersky" },
-        { name: "IBM Cyber security fundamentals", desc: "Cybersecurity Basics & Threat Management", issuer: "IBM" },
-        { name: "Misk Skills", desc: "Cybersecurity Incident Response & Nonprofit Project Management", issuer: "Misk Foundation" },
-        { name: "McKinsey Forward Program", desc: "Leadership, Problem Solving & Strategic Thinking", issuer: "McKinsey & Company" },
+        { name: "ISC2 Cybersecurity Specialization", desc: "Access Control, Network & Cloud Security, Cryptography & Incident Response", issuer: "ISC2 / Coursera", link: "https://www.linkedin.com/in/bahathiq/details/certifications/" },
+        { name: "NCA-KAUST Cybersecurity Program", desc: "Advanced Cybersecurity Training", issuer: "NCA / KAUST", link: "https://www.linkedin.com/posts/bahathiq_its-my-pleasure-to-share-that-i-have-completed-activity-7171479785968123905-mLGi" },
+        { name: "Kaspersky Cybersecurity Program", desc: "Cyber Defense, Threat Analysis & Security Practices", issuer: "Kaspersky", link: "/certs/Certificate.pdf" },
+        { name: "IBM Cyber security fundamentals", desc: "Cybersecurity Basics & Threat Management", issuer: "IBM", link: "https://www.credly.com/badges/5ba4b01c-5465-41b8-acd3-59b91da16e74/linked_in_profile" },
+        { name: "Misk Skills", desc: "Cybersecurity Incident Response & Nonprofit Project Management", issuer: "Misk Foundation", link: "https://www.linkedin.com/in/bahathiq/details/certifications/" },
+        { name: "McKinsey Forward Program", desc: "Leadership, Problem Solving & Strategic Thinking", issuer: "McKinsey & Company", link: "https://www.credly.com/badges/367f4cc6-fe7b-4123-a81d-89112a6f2817/linked_in_profile" },
       ]
     },
     ar: {
       title: "الشهادات",
       items: [
-        { name: "eJPTv2", desc: "اختبار الاختراق وتقييم الثغرات والقرصنة الأخلاقية", issuer: "eLearnSecurity" },
+        { name: "eJPTv2", desc: "اختبار الاختراق وتقييم الثغرات والقرصنة الأخلاقية", issuer: "eLearnSecurity", link: "https://certs.ine.com/ef49f103-8822-4b59-af07-926ee00a3fb1" },
         { name: "ISC2 CC (Certified in Cybersecurity)", desc: "الهيكلة الأمنية، GRC، إدارة الهوية", issuer: "ISC2" },
-        { name: "ISC2 Cybersecurity Specialization", desc: "التحكم في الوصول، أمن الشبكات والسحابة، التشفير والاستجابة للحوادث", issuer: "ISC2 / Coursera" },
-        { name: "NCA-KAUST Cybersecurity Program", desc: "تدريب متقدم في الأمن السيبراني", issuer: "NCA / KAUST" },
-        { name: "Kaspersky Cybersecurity Program", desc: "الدفاع السيبراني وتحليل التهديدات والممارسات الأمنية", issuer: "Kaspersky" },
-        { name: "IBM Cyber security fundamentals", desc: "أساسيات الأمن السيبراني وإدارة التهديدات", issuer: "IBM" },
-        { name: "Misk Skills", desc: "الاستجابة للحوادث السيبرانية وإدارة المشاريع غير الربحية", issuer: "Misk Foundation" },
-        { name: "McKinsey Forward Program", desc: "القيادة وحل المشكلات والتفكير الاستراتيجي", issuer: "McKinsey & Company" },
+        { name: "ISC2 Cybersecurity Specialization", desc: "التحكم في الوصول، أمن الشبكات والسحابة، التشفير والاستجابة للحوادث", issuer: "ISC2 / Coursera", link: "https://www.linkedin.com/in/bahathiq/details/certifications/" },
+        { name: "NCA-KAUST Cybersecurity Program", desc: "تدريب متقدم في الأمن السيبراني", issuer: "NCA / KAUST", link: "https://www.linkedin.com/posts/bahathiq_its-my-pleasure-to-share-that-i-have-completed-activity-7171479785968123905-mLGi" },
+        { name: "Kaspersky Cybersecurity Program", desc: "الدفاع السيبراني وتحليل التهديدات والممارسات الأمنية", issuer: "Kaspersky", link: "/certs/Certificate.pdf" },
+        { name: "IBM Cyber security fundamentals", desc: "أساسيات الأمن السيبراني وإدارة التهديدات", issuer: "IBM", link: "https://www.credly.com/badges/5ba4b01c-5465-41b8-acd3-59b91da16e74/linked_in_profile" },
+        { name: "Misk Skills", desc: "الاستجابة للحوادث السيبرانية وإدارة المشاريع غير الربحية", issuer: "Misk Foundation", link: "https://www.linkedin.com/in/bahathiq/details/certifications/" },
+        { name: "McKinsey Forward Program", desc: "القيادة وحل المشكلات والتفكير الاستراتيجي", issuer: "McKinsey & Company", link: "https://www.credly.com/badges/367f4cc6-fe7b-4123-a81d-89112a6f2817/linked_in_profile" },
       ]
     }
   };
@@ -51,7 +51,7 @@ const Certifications = () => {
                 <div className="w-10 h-10 rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
                   <Award size={20} />
                 </div>
-                <a href={`/certs/${cert.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}.png`} target="_blank" rel="noreferrer" className="text-gray-500 hover:text-emerald-400 transition-colors">
+                <a href={cert.link || `/certs/${cert.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}.png`} target="_blank" rel="noreferrer" className="text-gray-500 hover:text-emerald-400 transition-colors">
                   <ExternalLink size={16} />
                 </a>
               </div>
