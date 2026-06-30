@@ -60,8 +60,7 @@ const Hero = () => {
               <FaGithub size={24} />
             </a>
             <a href="/recommendations" className="text-gray-400 hover:text-white transition-colors px-4 py-2 bg-gray-800/50 rounded-full hover:bg-emerald-500/20 hover:text-emerald-400 font-medium text-sm border border-gray-700/50 flex items-center gap-2">
-              <span className="hidden sm:inline">{lang === 'ar' ? 'التوصيات' : 'Recommendations'}</span>
-              <span className="sm:hidden">⭐</span>
+              <span>{lang === 'ar' ? 'التوصيات' : 'Recommendations'}</span>
             </a>
           </div>
         </div>
