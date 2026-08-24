@@ -37,18 +37,6 @@ const Experience = () => {
           ]
         },
         {
-          role: "Lead Coordinator – Iftar Initiative for Fasting Individuals",
-          company: "Princess Seetah Foundation & General Authority of Awqaf",
-          date: "Ramadan 1446-1447",
-          location: "Al Haram, Makkah",
-          description: [
-            "Led the daily operations of a large-scale Iftar initiative at Al Haram in Makkah during Ramadan 1446.",
-            "Served thousands of fasting individuals daily with professional organization and a volunteer spirit.",
-            "Empowered Saudi student volunteers from universities and schools by involving them in meaningful service.",
-            "Contributed to preparing the official end-of-season report documenting overall impact and outcomes."
-          ]
-        },
-        {
           role: "Cybersecurity Engineer Intern",
           company: "SALLA E-Commerce",
           date: "Jun 2025 - Aug 2025",
@@ -120,6 +108,18 @@ const Experience = () => {
             "Led a team of content creators to design and execute digital marketing campaigns, significantly increasing student engagement.",
             "Oversaw the documentation of events and the creation of promotional materials, ensuring brand consistency."
           ]
+        },
+        {
+          role: "Lead Coordinator – Iftar Initiative for Fasting Individuals",
+          company: "Princess Seetah Foundation & General Authority of Awqaf",
+          date: "Ramadan 1446-1447",
+          location: "Al Haram, Makkah",
+          description: [
+            "Led the daily operations of a large-scale Iftar initiative at Al Haram in Makkah during Ramadan 1446.",
+            "Served thousands of fasting individuals daily with professional organization and a volunteer spirit.",
+            "Empowered Saudi student volunteers from universities and schools by involving them in meaningful service.",
+            "Contributed to preparing the official end-of-season report documenting overall impact and outcomes."
+          ]
         }
       ]
     },
@@ -137,18 +137,6 @@ const Experience = () => {
             "دعم مبادرات إدارة المخاطر والامتثال بما يتماشى مع المتطلبات التنظيمية والمؤسسية.",
             "تطوير ومراقبة مؤشرات الأداء التشغيلية خلال موسم الحج لقياس الأداء وفعالية الخدمة.",
             "بناء لوحات معلومات تفاعلية في Power BI وتقارير تنفيذية لدعم التخطيط الاستراتيجي واتخاذ القرارات المبنية على البيانات."
-          ]
-        },
-        {
-          role: "مشرف مبادرة إفطار الصائمين",
-          company: "بالتعاون مع وقف الأميرة صيتة والهيئة العامة للأوقاف",
-          date: "رمضان ١٤٤٦-١٤٤٧",
-          location: "المسجد الحرام، مكة المكرمة",
-          description: [
-            "أشرفت على تنفيذ مبادرة إفطار الصائمين في المسجد الحرام خلال شهر رمضان.",
-            "خدمة آلاف الصائمين يوميًا بتنظيم احترافي وروح تطوعية.",
-            "تمكين المتطوعين من طلاب الجامعات والمدارس السعودية من خلال إشراكهم في خدمة ذات معنى خلال الشهر الفضيل.",
-            "المساهمة في إعداد التقرير الرسمي لنهاية الموسم وتوثيق الأثر العام ونتائج البرامج الخيرية."
           ]
         },
         {
@@ -222,6 +210,18 @@ const Experience = () => {
             "بصفتي قائدًا للجنة الإعلامية، قمت بإدارة جميع جوانب وسائل التواصل الاجتماعي والمظهر العام للنادي.",
             "قيادة فريق من صناع المحتوى لتصميم وتنفيذ حملات التسويق الرقمي، مما زاد بشكل كبير من تفاعل الطلاب.",
             "الإشراف على توثيق الفعاليات وإنشاء المواد الترويجية، مع ضمان اتساق الهوية البصرية."
+          ]
+        },
+        {
+          role: "مشرف مبادرة إفطار الصائمين",
+          company: "بالتعاون مع وقف الأميرة صيتة والهيئة العامة للأوقاف",
+          date: "رمضان ١٤٤٦-١٤٤٧",
+          location: "المسجد الحرام، مكة المكرمة",
+          description: [
+            "أشرفت على تنفيذ مبادرة إفطار الصائمين في المسجد الحرام خلال شهر رمضان.",
+            "خدمة آلاف الصائمين يوميًا بتنظيم احترافي وروح تطوعية.",
+            "تمكين المتطوعين من طلاب الجامعات والمدارس السعودية من خلال إشراكهم في خدمة ذات معنى خلال الشهر الفضيل.",
+            "المساهمة في إعداد التقرير الرسمي لنهاية الموسم وتوثيق الأثر العام ونتائج البرامج الخيرية."
           ]
         }
       ]

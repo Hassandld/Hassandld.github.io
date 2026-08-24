@@ -7,6 +7,11 @@ export const metadata: Metadata = {
   title: "Hassan Bahathiq | Cybersecurity & PMO Professional",
   description: "Portfolio of Hassan Ahmed Bahathiq, Cybersecurity Graduate experienced in GRC, IAM, Security Operations, Strategic Planning, and PMO initiatives.",
   keywords: ["Hassan Bahathiq", "Hassan Ahmed Bahathiq", "Cybersecurity Saudi Arabia", "IAM", "GRC", "Security Operations"],
+  icons: {
+    icon: "/hero-image.jpg",
+    shortcut: "/hero-image.jpg",
+    apple: "/hero-image.jpg",
+  },
   openGraph: {
     title: "Hassan Bahathiq | Cybersecurity & PMO Professional",
     description: "Experienced in Governance, Risk & Compliance (GRC), Identity & Access Management (IAM), Security Operations, Strategic Planning, and PMO initiatives.",
