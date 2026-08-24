@@ -1,15 +1,7 @@
 import type { Metadata } from "next";
-import { Inter, Tajawal } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/context/LanguageContext";
 import Background from "@/components/Background";
-
-const inter = Inter({ subsets: ["latin"] });
-const tajawal = Tajawal({ 
-  subsets: ["arabic"], 
-  weight: ["200", "300", "400", "500", "700", "800", "900"],
-  variable: '--font-tajawal'
-});
 
 export const metadata: Metadata = {
   title: "Hassan Bahathiq | Cybersecurity & PMO Professional",
@@ -22,7 +14,7 @@ export const metadata: Metadata = {
     siteName: "Hassan Bahathiq Portfolio",
     images: [
       {
-        url: "https://hassandld.github.io/og-image.png",
+        url: "https://hassandld.github.io/about-image.png",
         width: 1200,
         height: 630,
         alt: "Hassan Bahathiq Professional Preview",
@@ -35,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hassan Bahathiq | Cybersecurity & PMO Professional",
     description: "Experienced in GRC, IAM, Security Operations, Strategic Planning, and PMO initiatives.",
-    images: ["https://hassandld.github.io/og-image.png"],
+    images: ["https://hassandld.github.io/about-image.png"],
   },
 };
 
@@ -46,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${inter.className} ${tajawal.variable} text-gray-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200`}>
+      <body className="min-h-screen overflow-x-hidden bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-200">
         <LanguageProvider>
           <Background />
           {children}

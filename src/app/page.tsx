@@ -9,7 +9,7 @@ import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-900">
+    <main className="relative min-h-screen w-full overflow-x-hidden flex flex-col bg-transparent">
       <Hero />
       <About />
       <Experience />

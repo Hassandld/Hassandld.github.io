@@ -1,15 +1,29 @@
 "use client";
 
 import React from 'react';
-import { Briefcase, Calendar } from 'lucide-react';
+import { Briefcase, Calendar, MapPin, Sparkles } from 'lucide-react';
+import { motion, type Variants } from 'framer-motion';
 import { useLanguage } from '@/context/LanguageContext';
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+};
 
 const Experience = () => {
   const { lang } = useLanguage();
 
   const content = {
     en: {
+      badge: "Career Track",
       title: "Experience",
+      subtitle: "My Professional Journey & Leadership Roles",
       items: [
         {
           role: "Planning & PMO Specialist",
@@ -110,7 +124,9 @@ const Experience = () => {
       ]
     },
     ar: {
+      badge: "المسار المهني",
       title: "الخبرات العملية",
+      subtitle: "مسيرتي المهنية والقيادية",
       items: [
         {
           role: "أخصائي تخطيط وإدارة مشاريع",
@@ -215,38 +231,127 @@ const Experience = () => {
   const t = content[lang];
 
   return (
-    <section id="experience" className="py-20 px-6 sm:px-12 lg:px-24">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2 text-center">{t.title}</h2>
-        <div className="w-16 h-1 bg-emerald-500 rounded mx-auto mb-16"></div>
+    <section id="experience" className="py-20 sm:py-28 px-4 sm:px-8 lg:px-16 relative z-10 overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        {/* Section Header */}
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.6 }}
+          className="flex flex-col items-center text-center mb-16 sm:mb-20"
+        >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs sm:text-sm font-semibold tracking-wide uppercase mb-3 backdrop-blur-md">
+            <Sparkles size={14} className="text-emerald-400" />
+            <span>{t.badge}</span>
+          </div>
 
-        <div className="space-y-12 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-gray-700 before:to-transparent">
-          {t.items.map((exp, index) => (
-            <div key={index} className={`relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active`}>
-              <div className="flex items-center justify-center w-10 h-10 rounded-full border-4 border-gray-900 bg-emerald-500 text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 ml-0 md:ml-0 z-10">
-                <Briefcase size={16} />
-              </div>
-              
-              <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-gray-800/80 p-6 rounded-xl border border-gray-700 hover:border-emerald-500/50 transition-colors shadow-lg ml-6 md:ml-0">
-                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
-                  <div>
-                    <h3 className="text-xl font-bold text-white">{exp.role}</h3>
-                    <div className="text-emerald-400 font-medium">{exp.company}</div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight">
+            {t.title}
+          </h2>
+          
+          <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-500 rounded-full mx-auto mt-4" />
+
+          <p className="text-gray-400 text-sm sm:text-base max-w-2xl mt-4 leading-relaxed">
+            {t.subtitle}
+          </p>
+        </motion.div>
+
+        {/* Timeline Container */}
+        <div className="relative">
+          {/* Vertical Spine */}
+          <div 
+            className="absolute top-4 bottom-4 w-0.5 bg-gradient-to-b from-emerald-500/40 via-emerald-500/20 to-transparent
+                       left-5 sm:left-6 md:left-1/2 md:-translate-x-1/2
+                       rtl:left-auto rtl:right-5 sm:rtl:right-6 md:rtl:right-auto md:rtl:left-1/2"
+            aria-hidden="true"
+          />
+
+          <motion.div 
+            className="space-y-10 sm:space-y-12"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.05 }}
+          >
+            {t.items.map((exp, index) => {
+              const isEven = index % 2 === 0;
+
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 25 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.5, delay: index * 0.05 }}
+                  className={`relative flex items-start md:items-center ${
+                    isEven ? 'md:flex-row' : 'md:flex-row-reverse'
+                  } group`}
+                >
+                  {/* Timeline Glowing Node Indicator */}
+                  <div 
+                    className="absolute top-6 z-20 flex items-center justify-center w-10 h-10 rounded-full
+                               bg-slate-900 border-2 border-emerald-500 text-white shadow-lg shadow-emerald-500/30
+                               left-0 sm:left-1 md:left-1/2 md:-translate-x-1/2
+                               rtl:left-auto rtl:right-0 sm:rtl:right-1 md:rtl:right-auto md:rtl:left-1/2
+                               group-hover:scale-110 group-hover:border-emerald-400 group-hover:shadow-emerald-500/50 transition-all duration-300"
+                  >
+                    <div className="absolute inset-0 rounded-full bg-emerald-500/20 animate-ping opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    <Briefcase size={16} className="text-emerald-400 group-hover:text-emerald-300 transition-colors" />
                   </div>
-                  <div className="flex items-center text-sm text-gray-400 whitespace-nowrap bg-gray-900 px-3 py-1 rounded-full w-fit">
-                    <Calendar size={14} className={lang === 'ar' ? 'ml-1.5' : 'mr-1.5'} />
-                    <span dir="ltr">{exp.date}</span>
+
+                  {/* Card Container */}
+                  <div 
+                    className={`w-full pl-14 sm:pl-16 rtl:pl-0 rtl:pr-14 sm:rtl:pr-16 md:pl-0 md:pr-0 md:rtl:pl-0 md:rtl:pr-0
+                               md:w-[calc(50%-2.5rem)] lg:md:w-[calc(50%-3rem)]
+                               ${isEven ? 'md:mr-auto md:rtl:mr-0 md:rtl:ml-auto' : 'md:ml-auto md:rtl:ml-0 md:rtl:mr-auto'}`}
+                  >
+                    <motion.div
+                      whileHover={{ y: -3 }}
+                      transition={{ duration: 0.2 }}
+                      className="bg-slate-900/70 hover:bg-slate-900/90 backdrop-blur-xl p-5 sm:p-7 rounded-2xl
+                                 border border-white/10 hover:border-emerald-500/40 shadow-xl shadow-black/20
+                                 hover:shadow-emerald-500/5 transition-all duration-300"
+                    >
+                      {/* Role & Date Header */}
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2.5 mb-3">
+                        <div className="space-y-1 min-w-0 flex-1">
+                          <h3 className="text-lg sm:text-xl font-bold text-white group-hover:text-emerald-300 transition-colors leading-snug">
+                            {exp.role}
+                          </h3>
+                          <div className="text-emerald-400 font-medium text-sm sm:text-base">
+                            {exp.company}
+                          </div>
+                        </div>
+
+                        {/* Responsive Date Badge */}
+                        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs sm:text-sm font-medium bg-emerald-950/60 border border-emerald-500/30 text-emerald-300 shrink-0 self-start max-w-full flex-wrap">
+                          <Calendar size={13} className="text-emerald-400 shrink-0" />
+                          <span className="leading-tight break-words">{exp.date}</span>
+                        </div>
+                      </div>
+
+                      {/* Location */}
+                      <div className="flex items-center gap-1.5 text-xs sm:text-sm text-gray-400 mb-4">
+                        <MapPin size={13} className="text-emerald-500/80 shrink-0" />
+                        <span>{exp.location}</span>
+                      </div>
+
+                      {/* Description Bullet List */}
+                      <ul className="space-y-2.5 text-gray-300 text-sm sm:text-base leading-relaxed text-left rtl:text-right">
+                        {exp.description.map((item, i) => (
+                          <li key={i} className="flex items-start gap-2.5">
+                            <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 mt-2 shrink-0 group-hover:scale-125 transition-transform" />
+                            <span className="flex-1">{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </motion.div>
                   </div>
-                </div>
-                <div className="text-sm text-gray-500 mb-4">{exp.location}</div>
-                <ul className="list-disc list-inside space-y-2 text-gray-300 text-sm md:text-base leading-relaxed">
-                  {exp.description.map((item, i) => (
-                    <li key={i}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          ))}
+                </motion.div>
+              );
+            })}
+          </motion.div>
         </div>
       </div>
     </section>

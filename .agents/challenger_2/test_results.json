@@ -1,0 +1,224 @@
+{
+  "fontTests": {
+    "tajawalImported": false,
+    "tajawalSubsetsArabic": false,
+    "tajawalVariableSet": false,
+    "arabicWeightsCount": 0,
+    "bodyAppliesTajawalVar": false,
+    "globalsHasLangAr": true,
+    "langContextSetsHtmlLang": true,
+    "langContextSetsHtmlDir": true
+  },
+  "scrollbarTests": {
+    "hasCustomScrollbarCSS": true,
+    "hasWebkitScrollbar": true,
+    "hasScrollbarColor": true,
+    "hasScrollbarWidth": true
+  },
+  "glassmorphismTests": {
+    "backdropBlurUsages": [
+      {
+        "file": "About.tsx",
+        "matches": [
+          "backdrop-blur-xl"
+        ]
+      },
+      {
+        "file": "Experience.tsx",
+        "matches": [
+          "backdrop-blur-xl"
+        ]
+      },
+      {
+        "file": "FeaturedProject.tsx",
+        "matches": [
+          "backdrop-blur-md",
+          "backdrop-blur-2xl",
+          "backdrop-blur-md",
+          "backdrop-blur-xl"
+        ]
+      },
+      {
+        "file": "Hero.tsx",
+        "matches": [
+          "backdrop-blur-md",
+          "backdrop-blur-xl",
+          "backdrop-blur-xl",
+          "backdrop-blur-xl",
+          "backdrop-blur-xl",
+          "backdrop-blur-xl",
+          "backdrop-blur-xl"
+        ]
+      },
+      {
+        "file": "Skills.tsx",
+        "matches": [
+          "backdrop-blur-xl"
+        ]
+      }
+    ],
+    "globalsHasSupportsBackdrop": false
+  },
+  "contrastTests": [
+    {
+      "name": "Emerald 400 headline on Gray 950 (darkest bg)",
+      "fg": "#34d399",
+      "bg": "#030712",
+      "target": "Large/Normal Text",
+      "ratio": "10.47",
+      "verdict": "PASS (AAA)",
+      "passAA_Normal": true,
+      "passAA_Large": true
+    },
+    {
+      "name": "Emerald 400 headline on Gray 900 (main bg)",
+      "fg": "#34d399",
+      "bg": "#111827",
+      "target": "Large/Normal Text",
+      "ratio": "9.23",
+      "verdict": "PASS (AAA)",
+      "passAA_Normal": true,
+      "passAA_Large": true
+    },
+    {
+      "name": "Emerald 400 badge text on Gray 800 (card bg)",
+      "fg": "#34d399",
+      "bg": "#1f2937",
+      "target": "UI / Badges",
+      "ratio": "7.64",
+      "verdict": "PASS (AAA)",
+      "passAA_Normal": true,
+      "passAA_Large": true
+    },
+    {
+      "name": "Gray 100 body text on Gray 900",
+      "fg": "#f3f4f6",
+      "bg": "#111827",
+      "target": "Normal Text",
+      "ratio": "16.12",
+      "verdict": "PASS (AAA)",
+      "passAA_Normal": true,
+      "passAA_Large": true
+    },
+    {
+      "name": "Gray 300 subtitle on Gray 900",
+      "fg": "#d1d5db",
+      "bg": "#111827",
+      "target": "Normal Text",
+      "ratio": "12.04",
+      "verdict": "PASS (AAA)",
+      "passAA_Normal": true,
+      "passAA_Large": true
+    },
+    {
+      "name": "Gray 400 secondary text on Gray 900",
+      "fg": "#9ca3af",
+      "bg": "#111827",
+      "target": "Normal Text",
+      "ratio": "6.99",
+      "verdict": "PASS (AA Normal)",
+      "passAA_Normal": true,
+      "passAA_Large": true
+    },
+    {
+      "name": "White text on Emerald 500 button",
+      "fg": "#ffffff",
+      "bg": "#10b981",
+      "target": "Button CTA",
+      "ratio": "2.54",
+      "verdict": "FAIL",
+      "passAA_Normal": false,
+      "passAA_Large": false
+    },
+    {
+      "name": "White text on Emerald 600 button hover",
+      "fg": "#ffffff",
+      "bg": "#059669",
+      "target": "Button Hover",
+      "ratio": "3.77",
+      "verdict": "PASS (AA Large)",
+      "passAA_Normal": false,
+      "passAA_Large": true
+    },
+    {
+      "name": "Emerald 200 text on Emerald 500 selection (30% alpha on dark)",
+      "fg": "#a7f3d0",
+      "bg": "#111827",
+      "target": "Selection Text",
+      "ratio": "13.83",
+      "verdict": "PASS (AAA)",
+      "passAA_Normal": true,
+      "passAA_Large": true
+    }
+  ],
+  "componentRegressionTests": [
+    {
+      "comp": "Hero.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": true,
+      "bilingualSupport": "COMPLETE",
+      "status": "OK"
+    },
+    {
+      "comp": "About.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": true,
+      "bilingualSupport": "COMPLETE",
+      "status": "OK"
+    },
+    {
+      "comp": "Experience.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": true,
+      "bilingualSupport": "COMPLETE",
+      "status": "OK"
+    },
+    {
+      "comp": "FeaturedProject.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": true,
+      "bilingualSupport": "COMPLETE",
+      "status": "OK"
+    },
+    {
+      "comp": "Certifications.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": true,
+      "bilingualSupport": "COMPLETE",
+      "status": "OK"
+    },
+    {
+      "comp": "Awards.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": true,
+      "bilingualSupport": "COMPLETE",
+      "status": "OK"
+    },
+    {
+      "comp": "Skills.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": true,
+      "bilingualSupport": "COMPLETE",
+      "status": "OK"
+    },
+    {
+      "comp": "Contact.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": true,
+      "bilingualSupport": "COMPLETE",
+      "status": "OK"
+    },
+    {
+      "comp": "Background.tsx",
+      "hasUseClient": true,
+      "hasUseLanguage": false,
+      "bilingualSupport": "N/A (Visual only)",
+      "status": "OK"
+    }
+  ],
+  "summary": {
+    "passed": 0,
+    "failed": 0,
+    "warnings": 0
+  }
+}

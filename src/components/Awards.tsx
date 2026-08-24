@@ -1,15 +1,41 @@
 "use client";
 
 import React from 'react';
-import { Trophy, Star, ShieldCheck } from 'lucide-react';
+import { motion, type Variants } from 'framer-motion';
+import { Trophy, Star, ShieldCheck, Award as AwardIcon, ExternalLink } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.1,
+    },
+  },
+};
+
+const cardVariants: Variants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.55,
+      ease: [0.22, 1, 0.36, 1],
+    },
+  },
+};
 
 const Awards = () => {
   const { lang } = useLanguage();
 
   const content = {
     en: {
+      badge: "Honors & Achievements",
       title: "Awards & Honors",
+      subtitle: "National and academic recognitions for cybersecurity excellence, leadership, and innovation",
       items: [
         {
           icon: <Star className="text-emerald-400" size={24} />,
@@ -62,7 +88,9 @@ const Awards = () => {
       ]
     },
     ar: {
+      badge: "الجوائز والإنجازات",
       title: "الجوائز والتكريمات",
+      subtitle: "تكريمات وطنية وأكاديمية في التميز السيبراني، القيادة، والابتكار التقني",
       items: [
         {
           icon: <Star className="text-emerald-400" size={24} />,
@@ -119,29 +147,97 @@ const Awards = () => {
   const t = content[lang];
 
   return (
-    <section id="awards" className="py-20 px-6 sm:px-12 lg:px-24 bg-gray-900/50">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-2 text-center">{t.title}</h2>
-        <div className="w-16 h-1 bg-emerald-500 rounded mx-auto mb-16"></div>
+    <section id="awards" className="py-24 px-6 sm:px-12 lg:px-24 bg-slate-900/40 relative overflow-hidden">
+      {/* Background ambient lighting */}
+      <div className="absolute top-1/3 right-10 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none -z-10" />
+      <div className="absolute bottom-10 left-10 w-80 h-80 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none -z-10" />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {t.items.map((award, index) => (
-            <a key={index} href={award.link || "#"} target={award.link ? "_blank" : "_self"} rel={award.link ? "noreferrer" : ""} className="block bg-gray-800/80 rounded-2xl p-8 border border-gray-700 hover:border-emerald-500/50 transition-all shadow-xl relative overflow-hidden group h-full cursor-pointer">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/5 rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110"></div>
-              
-              <div className="flex items-start justify-between mb-6">
-                <div className="p-3 bg-gray-900 rounded-xl border border-gray-700">
-                  {award.icon}
+      <div className="max-w-7xl mx-auto">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-80px" }}
+          transition={{ duration: 0.6 }}
+          className="text-center mb-16"
+        >
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-semibold uppercase tracking-wider mb-4">
+            <AwardIcon size={14} />
+            <span>{t.badge}</span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white tracking-tight mb-4">
+            {t.title}
+          </h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full mx-auto mb-4"></div>
+          <p className="text-slate-400 max-w-2xl mx-auto text-sm sm:text-base">
+            {t.subtitle}
+          </p>
+        </motion.div>
+
+        <motion.div 
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-50px" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          {t.items.map((award, index) => {
+            const hasLink = Boolean(award.link);
+            return (
+              <motion.a
+                key={index}
+                variants={cardVariants}
+                whileHover={{ y: -6, transition: { duration: 0.25 } }}
+                href={award.link || "#"}
+                target={hasLink ? "_blank" : "_self"}
+                rel={hasLink ? "noreferrer" : ""}
+                className="group relative bg-slate-900/60 backdrop-blur-xl rounded-2xl p-8 border border-slate-800/80 hover:border-emerald-500/40 transition-all duration-300 shadow-xl shadow-black/30 hover:shadow-emerald-500/10 overflow-hidden flex flex-col justify-between h-full cursor-pointer"
+              >
+                {/* Decorative corner glow */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-500/10 rounded-bl-full -mr-12 -mt-12 transition-transform duration-500 group-hover:scale-125 pointer-events-none" />
+                
+                {/* Subtle top border gradient */}
+                <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-transparent via-emerald-500/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-t-2xl" />
+
+                <div>
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="p-3.5 bg-slate-950/80 rounded-xl border border-slate-800 group-hover:border-emerald-500/30 text-emerald-400 transition-colors shadow-inner">
+                      {award.icon}
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <span className="px-3 py-1 rounded-full text-xs font-bold bg-slate-800/80 text-emerald-300 border border-slate-700/60 tracking-wider" dir="ltr">
+                        {award.year}
+                      </span>
+                      {hasLink && (
+                        <div className="text-slate-500 group-hover:text-emerald-400 transition-colors">
+                          <ExternalLink size={16} />
+                        </div>
+                      )}
+                    </div>
+                  </div>
+
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors duration-200">
+                    {award.title}
+                  </h3>
+                  <p className="text-emerald-400 text-sm font-semibold mb-4">
+                    {award.org}
+                  </p>
+                  <p className="text-slate-400 text-sm leading-relaxed">
+                    {award.desc}
+                  </p>
                 </div>
-                <span className="text-2xl font-bold text-gray-800/50" dir="ltr">{award.year}</span>
-              </div>
-              
-              <h3 className="text-xl font-bold text-white mb-2">{award.title}</h3>
-              <p className="text-emerald-400 font-medium mb-4">{award.org}</p>
-              <p className="text-gray-400 text-sm leading-relaxed">{award.desc}</p>
-            </a>
-          ))}
-        </div>
+
+                {hasLink && (
+                  <div className="mt-6 pt-4 border-t border-slate-800/60 flex items-center justify-end">
+                    <span className="text-xs font-medium text-emerald-400 hover:text-emerald-300 flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                      <span>{lang === 'ar' ? 'عرض التكريم / الإثبات' : 'View Recognition'}</span>
+                      <ExternalLink size={12} />
+                    </span>
+                  </div>
+                )}
+              </motion.a>
+            );
+          })}
+        </motion.div>
       </div>
     </section>
   );
